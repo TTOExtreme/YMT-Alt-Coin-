@@ -1,0 +1,65 @@
+<html><body><p>Temperature</p><canvas id='TempC' width='500' height='200'style='border:1px solid #d3d3d3;'></canvas><p>Humity</p><canvas id='HumC' width='500' height='200'style='border:1px solid #d3d3d3;'></canvas><meta http-equiv='refresh' content='1;'><script>
+var vectTemp = [0,50,10,12,13,5,50,80,1,2,3,5,8,15];
+var vectHum = [50,10,12,13,5,50,80,1,2,3,5,8,20];
+var litem = 0;var w=500;var h=200;var TempS = w/(vectTemp.length-1);var HumS = w/(vectHum.length-1);
+var tm = Math.max.apply(null, vectTemp);var hm = Math.max.apply(null, vectHum);tm=h/(tm+10);hm=h/(hm+10);
+
+function drawTemp(item, index){	if(index>0){var canvas = document.getElementById('TempC');var ctx = canvas.getContext('2d');ctx.font = '12px Arial';ctx.fillText(item,TempS*(index),h-(vectTemp[index]*tm));ctx.moveTo(TempS*(index-1),h-(vectTemp[index-1]*tm));ctx.lineTo(TempS*(index),h-(vectTemp[index]*tm));ctx.strokeStyle = '#ff0000';ctx.stroke();}}
+
+function drawHum(item, index){if(index>0){var canvas = document.getElementById('HumC');var ctx = canvas.getContext('2d');ctx.font = '12px Arial';ctx.fillText(item,HumS*(index),h-(vectHum[index]*hm));ctx.moveTo(HumS*(index-1),h-(vectHum[index-1]*hm));ctx.lineTo(HumS*(index),h-(vectHum[index]*hm));ctx.strokeStyle = '#00ff00';ctx.stroke();}}
+
+vectTemp.forEach(drawTemp);vectHum.forEach(drawHum);</script></body></html>
+
+
+
+<html>
+<body>
+	<p>Temperature</p>
+	<canvas id='TempC' width='500' height='200'style="border:1px solid #d3d3d3;"></canvas>
+	<p>Humity</p>
+	<canvas id='HumC' width='500' height='200'style="border:1px solid #d3d3d3;"></canvas>
+	<meta http-equiv="refresh" content="1;">
+<script>
+	var vectTemp = [0,50,10,12,13,5,50,80,1,2,3,5,8,15];
+	var vectHum = [50,10,12,13,5,50,80,1,2,3,5,8,20];
+	var litem = 0;
+	var w=500;
+	var h=200;
+	var TempS = w/(vectTemp.length-1);
+	var HumS = w/(vectHum.length-1);
+	var tm = Math.max.apply(null, vectTemp);
+	var hm = Math.max.apply(null, vectHum);
+	tm=h/(tm+10);
+	hm=h/(hm+10);
+	function drawTemp(item, index){
+		if(index>0){
+			var canvas = document.getElementById("TempC");
+			var ctx = canvas.getContext("2d");
+			ctx.font = "12px Arial";
+			ctx.fillText(item,TempS*(index),h-(vectTemp[index]*tm));
+			ctx.moveTo(TempS*(index-1),h-(vectTemp[index-1]*tm));
+			ctx.lineTo(TempS*(index),h-(vectTemp[index]*tm));
+    	    ctx.strokeStyle = '#ff0000';
+			ctx.stroke();
+    	}
+	}
+	function drawHum(item, index){
+		if(index>0){
+			var canvas = document.getElementById("HumC");
+			var ctx = canvas.getContext("2d");
+			ctx.font = "12px Arial";
+			ctx.fillText(item,HumS*(index),h-(vectHum[index]*hm));
+			ctx.moveTo(HumS*(index-1),h-(vectHum[index-1]*hm));
+			ctx.lineTo(HumS*(index),h-(vectHum[index]*hm));
+	        ctx.strokeStyle = '#00ff00';
+			ctx.stroke();
+	    }
+	}
+
+	vectTemp.forEach(drawTemp);
+	vectHum.forEach(drawHum);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+.Document{
+	opacity: 0;
+}
+
+.img_logo{
+	height: 80%;
+	background-size: contain;
+}
+
+.FixTop{
+	position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+	width: 100%;
+}
+.NavBar{
+	height: 50px;
+	padding: 10px;
+	background-color: #303060;
+}
+
+.fitter{
+	height: 100%;
+}
+
+.Nav_button{
+	background-color: #ffa600;
+	padding: 10px;
+	color: #686868;
+	opacity: 1;
+
+	-o-transition:opacity .5s ease-out;
+	-ms-transition:opacity .5s ease-out;
+  	-moz-transition:opacity .5s ease-out;
+  	-webkit-transition:opacity .5s ease-out;
+}
+
+.Nav_button:hover{
+	opacity: .6;
+}
+
+.Nav_buttonbg{
+	margin-left: 50px;
+	background-color: #686868;
+}
+
+.Nav_item {
+
+}
+
+.container{
+	margin-top: 300px;
+}
