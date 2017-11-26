@@ -15,6 +15,36 @@
     z-index: 1030;
 	width: 100%;
 }
+
+.bglogo{
+	background-color: #303060;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-bottom: 50px;
+	width: 100%;height: 100vh;
+}
+
+.about{
+	margin-top: 100vh;
+}
+
+.signame{
+	font-family: courier;
+	font-size: 18;
+}
+.abouttable{
+	table-layout: fixed;
+	width: 100%;
+}
+
+.easter{
+	opacity: 0;
+	position: 0;
+	top: 0;
+	left: 0;
+}
+
 .NavBar{
 	height: 50px;
 	padding: 10px;
@@ -23,12 +53,14 @@
 
 .fitter{
 	height: 100%;
+	margin: auto;
+	table-layout: fixed;
 }
 
 .Nav_button{
-	background-color: #ffa600;
+	--background-color: #ffa600;
 	padding: 10px;
-	color: #686868;
+	color: #ffffff;
 	opacity: 1;
 
 	-o-transition:opacity .5s ease-out;
@@ -43,7 +75,7 @@
 
 .Nav_buttonbg{
 	margin-left: 50px;
-	background-color: #686868;
+	--background-color: #686868;
 }
 
 .Nav_item {
@@ -52,4 +84,13 @@
 
 .container{
 	margin-top: 300px;
+}
+
+.flipconter{
+	border: none;
+	width: 100%;
+	height: 200px;
+}
+
+.Section{
 }
