@@ -2,239 +2,207 @@
 <html>
 <head>
     <title></title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <script src="jquery-3.2.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="index.css">
     <script src="index.js"></script>
 </head>
 <body>
-    <div id="home"></div>
     <div class="Document">
         <div class="FixTop">
             <div class="NavBar">
                 <table class="fitter">
                     <th class="fitter"><img class="Nav_item img_logo fitter" src="logo/logo.png"></th>
-                    <th class="Nav_item fitter"><div class="Nav_buttonbg"><a href="#top" class="Nav_button">HOME</a></div></th>
-                    <th class="Nav_item fitter"><div class="Nav_buttonbg"><a href="#part1" class="Nav_button">bt1</a></div></th>
-                    <th class="Nav_item fitter"><div class="Nav_buttonbg"><a href="#part2" class="Nav_button">bt2</a></div></th>
+                </table>
+                <table class="fitter" style="position: absolute; top: 0; width: 98vw;">
+                    <th class="Nav_item fitter Nav_tab"><div class="Nav_buttonbg"><a href="#top" class="Nav_button">HOME</a></div></th>
+                    <th class="Nav_item fitter Nav_tab"><div class="Nav_buttonbg"><a href="#ab" class="Nav_button">About</a></div></th>
+                    <th class="Nav_item fitter Nav_tab"><div class="Nav_buttonbg"><a href="#ctr" class="Nav_button">Contribute</a></div></th>
+                    <th class="fitter Nav_tab"><a href="#easter" class="Nav_button" style="opacity: 0;">Easter</a></th>
+                    <th class="Nav_item fitter Nav_tab"><div class="Nav_buttonbg"><a href="#td" class="Nav_button">Token Details</a></div></th>
+                    <th class="Nav_item fitter Nav_tab"><div class="Nav_buttonbg"><a href="#disc" class="Nav_button">Discounts</a></div></th>
+                    <th class="Nav_item fitter Nav_tab"><div class="Nav_buttonbg"><a href="#quest" class="Nav_button">Questions</a></div></th>
                 </table>
             </div>
         </div>
 
+        <div class="FadeInOut bglogo">
+            <img class="bglogo" src="logo/main_bg1.png">
+        </div>
+        <div style="height: 100vh;"></div>
 
 
 
-        <div id="part1" class="FadeInOut">
-            <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <p class="h1">First of its kind ICO</p>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <p>
-                        Let's be honest—everyone's tired of ICOs. They get hyped up for weeks, and then they
-                        launch and clog up the Ethereum network for days, Coinbase goes down for a while, and then
-                        “investors” see the new tokens lose most of their “value”. This ICO
-                        is going to be different.
-                    </p>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <p>
-                        The UET ICO <em>transparently</em> offers investors no value, so there will be no expectation
-                        of gains. No gains means few investors, few investors means few transactions, and few
-                        transactions means no Ethereum network lag—not to mention no depressing posts on
-                        /r/ethtrader about people losing all their savings!
-                    </p>
-                </div>
+
+        <div class="easter">
+            
+        </div>
+
+
+
+
+
+
+        <div id="ab" class="FadeInOut Section about">
+            <p></p>
+            <p><center><h1>The world's first 100% honest Ethereum ICO.</center></p>
+            <p><center><h3>You're going to give some random person on the internet money, etc, etc</center></p>
+            <p></p>
+        </div>
+
+
+
+        <div class="FadeInOut Section">
+            <table class="abouttable">
+                <tr>
+                    <td>
+                        <p><b><center>Ethereum retrived</center></b></p>
+                        <iframe class="flipconter" src="webframe/Values/Fliper_eth.html"></iframe>
+                    </td>
+                    <td>
+                        <p><b><center>Dolar Retrived</center></b></p>
+                        <iframe class="flipconter" src="webframe/Values/Fliper_usd.html"></iframe>
+                    </td>
+                    <td>
+                        <p><b><center>Tokens remaining</center></b></p>
+                        <iframe class="flipconter" src="webframe/Values/Fliper_tok.html"></iframe>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div id="ctr" class="FadeInOut Section buy">
+            <div>
+                <center>Buy YourMomToken token</center>
+                <p>
+                    Para comprar a YourMom... Token, que nós estamos vendendo simplesmente envie qualquer valor em ether para esse endereço:
+                </p>
+                <center class="address"><h2>0xEed425a987E689B682B3C8d22F262a5d684bF4e</h2></center>
+                <p>
+                    Sem registro, sem nada, a única coisa que vc precisa é adicionar o token na watchlist da sua carteira ethereum, ou vc não vai conseguir ver a YourMom, mesmo ela sendo inacreditavelmente grande e quase impossível de se ver, mas enfim
+                </p>
+
             </div>
-            <hr class="my-4">
-            <div class="row">
-                <div class="col-lg-4">
-                    <p class="h1">Might be secure, definitely not audited</p>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <p>
-                        I learned all about Ethereum smart contracts and Solidity over a weekend so I could launch this
-                        ICO. Most of the smart contract contract code is copied from GitHub and Stack Overflow posts,
-                        so it should be pretty much right… right?
-                    </p>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <p>
-                        Also, I definitely <em>didn't</em> have any smart contract experts look at the contract before
-                        I launched it. I mean, why bother? All the other ICOs go through weeks of auditing and they
-                        still end up with bugs and vulnerabilities in their contracts.
-                    </p>
-                </div>
-            </div>
-            <hr class="my-4">
-            <div class="row">
-                <div class="col-lg-4">
-                    <p class="h1">Guaranteed token value</p>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <p>
-                        Unlike with every other token sale on the market, I can guarantee here and now that the value
-                        of UET will not (in fact, can not) reduce during or after the ICO. Since these tokens aren't
-                        worth anything to start with, there's nowhere to go but up!
-                    </p>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <p>
-                        But remember—this is a <em>completely honest</em> ICO, which means I don't want anyone to
-                        mistakenly <em>expect</em> the value of the tokens to go up, either. They're called Useless
-                        Ethereum Tokens for a reason.
-                    </p>
-                </div>
+            <div class="Section buy">
+                <center>Buy YourMomToken token</center>
+                <p>
+                    Watch yor mom token 
+                    YourMomToken address:
+                </p>
+                <center class="address"><h2>0xEed425a987E689B682B3C8d22F262a5d684bF4e</h2></center>
+
             </div>
         </div>
 
-        <div id="part2" class="box1 FadeInOut">
-            <section class="contributing py-4 bg-white">
-        <div class="container">
-            <!--<h2 class="mb-4">How to contribute</h2>
-            <div class="alert alert-warning text-center" role="alert">
-                <strong>Thanks to some bug-finding by the Ethereum community, a new contract has been deployed.</strong><br />
-                If you're getting ready to contribute, make sure to use the contract address specified below.<br />
-                <small>Previous versions of the token contract <em>will not</em> be enabled, so any Ether transfers to them will be rejected.</small>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 text-center">
-                    <p class="lead">The crowdsale begins on:</p>
-                    <p class="h1">July 4<sup>th</sup>, 2017 <small><span class="text-muted">at</span></small> 2:00 P.M. UTC</p>
-                    <p class="text-muted"><small>(don't worry, I set a reminder on my iPhone)</small></p>
-                    <hr />
-                    <p>and will run until:</p>
-                    <p class="h3">July 11<sup>th</sup>, 2017 <small><span class="text-muted">at</span></small> 2:00 P.M. UTC</p>
-                    <p class="text-muted"><small>(or until I feel like ending it)</small></p>
-                </div>
-                <div class="col-lg-6">
-                    <div class="card card-inverse card-primary">
-                        <div class="card-block">
-                            <h4 class="card-title">Token contract and generator</h4>
-                            <h6 class="card-subtitle mb-2">(this is how you're going to send me my spending money)</h6>
-                            <hr class="jumbotron-hr" />
-                            <p class="card-text text-white">
-                                To participate in the UET ICO, just send as much Ether as you want to the UET token/crowdsale
-                                contract. Make sure you provide enough gas for the transaction&mdash;100,000 or so ought to do it.
-                            </p>
-                            <p class="card-text text-white text-center" style="word-break: break-all;"><small><strong>
-                                0x27f706edde3aD952EF647Dd67E24e38CD0803DD6
-                            </strong></small></p>
-                            <div class="text-center">
-                                View on <a class="text-white" href="https://etherscan.io/address/0x27f706edde3aD952EF647Dd67E24e38CD0803DD6" target="_blank">Etherscan</a>
-                                or <a class="text-white" href="https://etherchain.org/account/0x27f706edde3aD952EF647Dd67E24e38CD0803DD6" target="_blank">etherchain</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
 
-            <div class="alert alert-warning text-center" role="alert">
-                <strong>The UET crowdsale has finished.</strong> Thanks to everyone who contributed!<br>
-                <small>(Regardless of the fact that none of you read any of the warnings on this page.)</small><br>
-                <small>You can view the token contract and transactions on <a href="https://etherscan.io/address/0x27f706edde3aD952EF647Dd67E24e38CD0803DD6" target="_blank">Etherscan</a>.</small>
-            </div>
-
-
-            <div id="stats" style="">
-                <!--<hr />-->
-                <h2 class="mb-4">Crowdsale Statistics</h2>
-                <div class="row text-center">
-                    <div class="col-lg-4">
-                        <p class="h4">Ether contributed</p>
-                        <p id="total-ether" style="font-size: 2.5em;">310.445</p>
-                        <p id="total-ether-message" class="text-muted">I had a feeling someone would waste their money.</p>
-                    </div>
-                    <div class="col-lg-4">
-                        <p class="h4">Contributions in USD</p>
-                        <p id="total-usd" style="font-size: 2.5em;">$94809</p>
-                        <p id="total-usd-message" class="text-muted">Enough to buy 79 televisions!</p>
-                    </div>
-                    <div class="col-lg-4">
-                        <p class="h4">Tokens issued</p>
-                        <p id="total-tokens" style="font-size: 2.5em;">3965716.097</p>
-                        <p id="total-tokens-message" class="text-muted">Including 591.000 bonus tokens!</p>
-                    </div>
-                </div>
-            </div>
+        <div id="td" class="FadeInOut Section">
+            <table class="abouttable">
+                <thead><pre class="signame"><center><h1> About.</h1></center></pre></thead>
+                <tr>
+                    <td>
+                        <p><b> First of its kind ICO </b></p>
+                        <p>
+                            Let's be honest—everyone's tired of ICOs. They get hyped up for weeks, and then they launch and clog up the Ethereum network for days, Coinbase goes down for a while, and then “investors” see the new tokens lose most of their “value”. This ICO is going to be different.
+                        </p>
+                        <p>
+                            The UET ICO transparently offers investors no value, so there will be no expectation of gains. No gains means few investors, few investors means few transactions, and few transactions means no Ethereum network lag—not to mention no depressing posts on /r/ethtrader about people losing all their savings!
+                        </p>
+                    </td>
+                    <td>
+                        <p><b> Might be secure, supostamente auditado e tecnicamente com um modo fail-safe </b></p>
+                        <p>
+                            I learned all about Ethereum smart contracts and Solidity in a couple of weeks so I could launch this ICO. Most of the TOKEN contract code foi feito usando o guia no site da ethereum, so it should be pretty much right… right?
+                        </p>
+                        <p>
+                            Also, O código da crowdsale contract foi feito usando guia da ethereum para crowdsale, um pouco adaptado e com muito mais gordura, mais ainda com o mesmo espírito
+                        </p>
+                    </td>
+                    <td>
+                        <p><b> Guaranteed token value </b></p>
+                        <p>
+                            Unlike with every other token sale on the market, I can guarantee here and now that the value of UET will not (in fact, can not) reduce during or after the ICO. Since these tokens aren't worth anything to start with, there's nowhere to go but up!
+                        </p>
+                        <p>
+                            But remember—this is a completely honest ICO, which means I don't want anyone to mistakenly expect the value of the tokens to go up, either. They're called Useless Ethereum Tokens for a reason.
+                        </p>
+                    </td>
+                </tr>
+            </table>
         </div>
-    </section>
-         </div>
 
-        <div id="part3" class="box1 FadeInOut"> 
-<section class="token-details py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2 class="mb-4">Token distribution</h2>
-                    <p class="lead">
-                        The more Ether <em>everyone</em> contributes, the more tokens <em>you</em> get.
-                    </p>
-                    <p>
-                        The base token distribution formula is very simple: for every <strong>1 ETH</strong> you
-                        contribute, you'll receive <strong>100 UET</strong>, and if you contribute at least
-                        <strong>0.01 ETH</strong>, you'll also receive an additional <strong>1 UET</strong> for every
-                        Ether that's been contributed in total. Like this:
-                    </p>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Transaction</th>
-                                <th class="text-right">Ether sent</th>
-                                <th class="text-right">Total Ether sent</th>
-                                <th class="text-right">UET received</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>#1</td>
-                                <td class="text-right">1.000&nbsp;<small>ETH</small></td>
-                                <td class="text-right">1.000&nbsp;<small>ETH</small></td>
-                                <td class="text-right">101.000&nbsp;<small>UET</small></td>
-                            </tr>
-                            <tr>
-                                <td>#2</td>
-                                <td class="text-right">3.000&nbsp;<small>ETH</small></td>
-                                <td class="text-right">4.000&nbsp;<small>ETH</small></td>
-                                <td class="text-right">304.000&nbsp;<small>UET</small></td>
-                            </tr>
-                            <tr>
-                                <td>#3</td>
-                                <td class="text-right">0.005&nbsp;<small>ETH</small></td>
-                                <td class="text-right">4.005&nbsp;<small>ETH</small></td>
-                                <td class="text-right">0.500&nbsp;<small>UET</small></td>
-                            </tr>
-                            <tr>
-                                <td>#4</td>
-                                <td class="text-right">0.500&nbsp;<small>ETH</small></td>
-                                <td class="text-right">4.505&nbsp;<small>ETH</small></td>
-                                <td class="text-right">54.505&nbsp;<small>UET</small></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="col-md-6">
-                    <h2 class="mb-4">Bonus tokens!</h2>
-                    <p class="lead">
-                        Every block has a 1 in 256 chance of issuing bonus tokens.
-                    </p>
-                    <p>
-                        When purchasing UET, the smart contract will take a hash of the current block's coinbase,
-                        number, and timestamp. If the first byte of the hash is 0x00, the block becomes a <em>bonus block</em>.
-                        During a bonus block, the smart contract counts the number of bits set in the second byte of the
-                        hash and uses that number as a bonus multiplier.
-                    </p>
-                    <p>
-                        Every UET purchase of at least <strong>0.01 ETH</strong> worth during the bonus block will receive, in
-                        addition to the base distribution, an <strong>additional 100 UET</strong> per Ether multiplied
-                        by the bonus multiplier. That means that contributors have a chance of receiving a total of
-                        <em>nine times</em> the number of tokens they expected!
-                    </p>
-                </div>
-            </div>
+
+        <div id="disc" class="FadeInOut Section">
+            <table class="dicounttable">
+                <thead><pre class="signame"><center><h1> Discounts.</h1></center></pre></thead>
+                <tr>
+                    <td><p><b> Time </b></p></td>
+                    <td><p><b> Discount </b></p></td>
+                </tr>
+                <tr>
+                    <td><p><b> 0H-6H </b></p></td>
+                    <td><p><b> 70% </b></p></td>
+                </tr>
+                <tr>
+                    <td><p><b> 6H-18H </b></p></td>
+                    <td><p><b> 60% </b></p></td>
+                </tr>
+                <tr>
+                    <td><p><b> 18H-3D </b></p></td>
+                    <td><p><b> 50% </b></p></td>
+                </tr>
+                <tr>
+                    <td><p><b> 3D-7D </b></p></td>
+                    <td><p><b> 25% </b></p></td>
+                </tr>
+                <tr>
+                    <td><p><b> 7D-3W </b></p></td>
+                    <td><p><b> 10% </b></p></td>
+                </tr>
+                <tr>
+                    <td><p><b> 3W-2M </b></p></td>
+                    <td><p><b> 0% </b></p></td>
+                </tr>
+            </table>
         </div>
-    </section>
+
+        <div id="quest" class="FadeInOut Section">
+            <table class="questtable">
+                <thead><pre class="signame"><center><h1> Frequently Questions.</h1></center></pre></thead>
+                <tr>
+                    <td>
+                        <p>
+                            Wait… is this a joke? Is it a scam?
+                            Neither! This is real—and it's 100% transparent. You're literally giving your money to someone on the internet and getting completely useless tokens in return.
+                            There are no “whitepapers,” no “products,” and no “experts.” It's just you, me, your hard-earned Ether, and my shopping list.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Why are you doing this?
+                            Who knows? Maybe it's because I lost money in the GDAX flash crash. Maybe I got inspired by the guy who crowdfunded the potato salad. Maybe I'm just way too bored and need a better hobby.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            What can I do with YMT?
+                            YMT é um token ERC20, então você pode guardar, transferir, usar ela para demonstrar seu amor pelo sua mãe dando o token de presente pra ela ou algo assim… Além disso, bom… nada mesmo
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            E se o contrato tiver Bugs?
+                            Essa é uma boa pergunta, bom, o contrato do token é um ERC20, então não é pra ter bugs, mas se contrato da crowdsale detectar algum bug ou erro na auditoria, ele ativa o fail-safe mode, onde você pode nos vender a sua mãe e nós te devolvemos o dinheiro. Instruções para caso o fail-safe seja (magicamente) ativado <a target="_blank" href="http://thatsthefinger.com/" >aqui</a>
+                        </p>
+                    </td>
+                </tr>
+            </table>
         </div>
+
+
+
+
+
     </div>
 </body>
 </html>

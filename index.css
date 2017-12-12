@@ -1,10 +1,14 @@
 .Document{
 	opacity: 0;
+	background-color: #8080ff;
+
+	position: absolute;
+	left: 0;
 }
 
 .img_logo{
-	height: 80%;
 	background-size: contain;
+	z-index: 2;
 }
 
 .FixTop{
@@ -15,20 +19,81 @@
     z-index: 1030;
 	width: 100%;
 }
+
+.bglogo{
+	background-color: #303060;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-bottom: 50px;
+	width: 99vw;height: 100vh;
+}
+
+.Section{
+	padding-top: 15vh;
+	padding-bottom: 15vh;	
+	margin: 5vh;
+	background-color: #8080ff;
+	padding-left: 30px;
+	padding-right: 30px;
+
+  	background: -webkit-linear-gradient(top, #8080ff 1%, #6060f0 4%, #404060  98%, #8080ff 100%);
+  	background: linear-gradient(to bottom, #8080ff 1%, #6060f0 4%, #404060 98%, #8080ff 100%);
+}
+
+.about{
+	padding-top: 20vh;
+	padding-bottom: 20vh;
+}
+
+.buy{
+	text-align: center;
+}
+
+.address{
+	text-shadow: 0 0 5px #0000ff;
+}
+
+.signame{
+	font-family: courier;
+	font-size: 18;
+}
+.abouttable{
+	table-layout: fixed;
+	width: 100%;
+}
+
+.dicounttable{
+	table-layout: fixed;
+	width: 100%;
+	border: 1px solid black;
+}
+
+.easter{
+	opacity: 0;
+	position: 0;
+	top: 0;
+	left: 0;
+}
+
 .NavBar{
 	height: 50px;
-	padding: 10px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 99vw;
 	background-color: #303060;
 }
 
 .fitter{
 	height: 100%;
+	margin: auto;
+	table-layout: center;
 }
 
 .Nav_button{
-	background-color: #ffa600;
-	padding: 10px;
-	color: #686868;
+	--background-color: #ffa600;
+	color: #ffffff;
 	opacity: 1;
 
 	-o-transition:opacity .5s ease-out;
@@ -42,14 +107,19 @@
 }
 
 .Nav_buttonbg{
-	margin-left: 50px;
-	background-color: #686868;
+	--background-color: #686868;
 }
 
-.Nav_item {
-
+.Nav_tab {
+	width: 14vw;
 }
 
 .container{
 	margin-top: 300px;
+}
+
+.flipconter{
+	border: none;
+	width: 100%;
+	height: 200px;
 }
